@@ -5,6 +5,7 @@ import { CssBaseline, Grid } from '@material-ui/core';
 import Header from './components/Header/Header';
 import List from './components/List/List';
 import Map from './components/Map/Map';
+import PlaceDetails from './components/PlaceDetails/PlaceDetails';
 
 
 const App = () => {
@@ -15,10 +16,11 @@ const App = () => {
            <Grid container spacing={3} style={{ width: '100%'}}>
                 <Grid item xs={12} md={4}>
                     <List />
+                    {/*  //comment this stuff out <PlaceDetails /> */}
                 </Grid>
             <Grid item xs={12} md={8}>
                     <Map />
-            </Grid>
+                 </Grid>
             </Grid>
 
 
