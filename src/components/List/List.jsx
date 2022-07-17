@@ -5,11 +5,12 @@ import useStyles from './styles'
 
 const List = () => {
     const classes = useStyles();
-    const [type, setType] = useState('restaurant');
+    const [type, setType] = useState('');
     const [rating, setRating] = useState('');
     return (
         <div className={classes.container}>
-            <Typography variant="h4">Restaurants, Hotels & Attractions Around You</Typography>
+            <Typography variant="h6">Restaurants, Hotels & Attractions Around You</Typography>
+
             <FormControl className={classes.formControl}>
                 <InputLabel>Type</InputLabel>
                 <Select value={type} onChange={(e) =>setType(e.target.value)}>
@@ -19,6 +20,8 @@ const List = () => {
                 </Select>
 
             </FormControl>
+
+
             <FormControl className={classes.formControl}>
                 <InputLabel>Rating</InputLabel>
                 <Select value={rating} onChange={(e) =>setRating(e.target.value)}>
